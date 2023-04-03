@@ -7,7 +7,10 @@
 
 ##---->>>> Use a try/except clause to import the JSON module
 
-
+try:
+    import json
+except ImportError:
+    print("Could not import module")
 
 ##---->>>> Create file constants for the file names; file constants can be reused
 ##         There are 2 files to read this program: equip_r.txt and equip_s.txt
